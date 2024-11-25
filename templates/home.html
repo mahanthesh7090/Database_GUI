@@ -1,11 +1,44 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <h1>hello</h1>
-</body>
-</html>
+{% extends 'base.html' %}
+
+{% block title %}
+    home
+{% endblock title %}
+    
+
+    
+    {% block content %}
+        
+   
+        
+        <div class="hero">
+            <h1>Welcome to the Students Database</h1>
+            <p>An intuitive and user-friendly GUI to manage and explore student records effortlessly.</p>
+            
+            
+        </div>
+        <div class="info-section">
+            <h2>Database Tables</h2>
+            <ul>
+                <li>
+                    <a href="/student">Students</a>
+                    
+                </li>
+                <li>
+                    <a href="/branch">Branches</a>
+                    
+                </li>
+                <li>
+                    <a href="/course">Courses</a>
+                   
+                </li>
+                <li>
+                    <a href="/enrollment">Enrollments</a>
+                   
+                </li>
+            </ul>
+            <a href="/table/add" class="add-table-btn">Add Table</a>
+        </div>
+        
+        
+        {% endblock content %}
+   
