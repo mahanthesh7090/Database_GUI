@@ -2,7 +2,7 @@ Project Title:
 GUI for student management database
 
 Description:
-A web application for managing student and branch information, built with Flask and PostgreSQL. The system allows users to add, update, view, and delete student and branch records with a user-friendly interface. The project is styled using CSS for clean and intuitive navigation.
+A web application for managing student, branch and course information, built with Flask and PostgreSQL. The system allows users to add, update, view, and delete student and branch records with a user-friendly interface. The project is styled using CSS for clean and intuitive navigation.
 
 Features:
 
