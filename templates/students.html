@@ -1,0 +1,49 @@
+{% extends 'base.html' %}
+ 
+{% block title %}
+   students
+{% endblock title %}
+
+
+{% block content %}
+<div class="table-container">
+   <div class="table-header">
+       <h2>students</h2>
+       <a href="/addstudent" class="add-btn">Add</a>
+   </div>
+   <table>
+       <thead>
+           <tr>
+               <th>ID</th>
+               <th>Name</th>
+               <th>date of birth</th>
+               <th>Gender</th>
+               <th>Email</th>
+               <th>Phone</th>
+               <th>Branch</th>
+               <th>Action</th>
+           </tr>
+       </thead>
+       <tbody>
+           {% for student in students %}
+           <tr>
+               <td>{{ student.student_id }}</td>
+               <td>{{ student.student_name }}</td>
+               <td>{{ student.dob }}</td>
+               <td>{{ student.gender }}</td>
+               <td>{{ student.email }}</td>
+               <td>{{ student.phone }}</td>
+               <td>{{ student.branch_code }}</td>
+          
+           <td>
+               <a href="/editstudent/{{ student.student_id }}" class="edit-btn">Edit</a> 
+           </td>
+        </tr>
+           {% endfor %}
+       </tbody>
+   </table>
+</div>
+
+{% endblock content %}
+   
+   

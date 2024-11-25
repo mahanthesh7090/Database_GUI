@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+
+{% block title %}
+    add course
+{% endblock title %}
+
+{% block content %}
+
+<form action="/addcourse" method="POST">
+    
+    <label for="name">Course Name:</label>
+    <input type="text" id="name" name="name" required>
+    
+    
+    
+    <button type="submit">Add Branch</button>
+</form>
+{% endblock content %}
+    
